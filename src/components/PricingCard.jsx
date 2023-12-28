@@ -1,3 +1,4 @@
+import React from "react";
 import { CiCircleCheck } from "react-icons/ci";
 
 const PricingCard = ({header, description, price, features }) => {
@@ -15,13 +16,13 @@ const PricingCard = ({header, description, price, features }) => {
                 </p>
             </div>
 
-                {features.map((feature) => ( 
-                    <div>
+                {features.map((feature, key) => ( 
+                    <React.Fragment key={key}>
                         <CiCircleCheck sx={{fontSize: "50px"}} />
                         <p class="text-gray-700 text-base">
                             {feature.description}
                         </p>
-                    </div>
+                    </React.Fragment>
                 ))}
             </div>
     );
