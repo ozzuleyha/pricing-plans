@@ -33,7 +33,7 @@ export default function Home() {
       <div>
         <p class="font-bold text-3xl mb-2 p-16">Polimek Pricing Plans</p>
       </div>
-      <div className="z-10 w-full items-center justify-between font-mono text-sm lg:flex ">
+      <div className="z-10 w-full items-center justify-between text-sm lg:flex ">
         <PricingCard
           header={"Basic"}
           description={"for small teams"}
